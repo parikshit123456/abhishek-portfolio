@@ -1,0 +1,433 @@
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 48px;
+        text-align: center;
+    }
+    
+    .qualifications-content {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+    
+    .contact-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 48px;
+    }
+    
+    .experience-timeline::before {
+        left: 24px;
+    }
+    
+    .experience-item {
+        flex-direction: row !important;
+    }
+    
+    .experience-item .experience-content {
+        margin-left: 64px !important;
+        margin-right: 0 !important;
+        text-align: left !important;
+        width: calc(100% - 64px);
+    }
+    
+    .experience-date {
+        left: 24px !important;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 768px) {
+  .contact-content {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .contact-info,
+  .contact-form {
+    width: 100%;
+  }
+
+  .contact-form .form-row {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .contact-form .form-group {
+    width: 100%;
+  }
+
+  .contact-form .form-group input,
+  .contact-form .form-group textarea {
+    width: 100%;
+  }
+
+  .contact-form .submit-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.95);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        padding: 32px 0;
+        gap: 16px;
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    .hamburger {
+        display: flex;
+    }
+    
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger.active span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .hamburger.active span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    .name {
+        font-size: 36px;
+    }
+    
+    .designation {
+        font-size: 20px;
+    }
+    
+    .profile-img {
+        width: 280px;
+        height: 280px;
+    }
+    
+    .section-title {
+        font-size: 28px;
+    }
+    
+    .cta-buttons {
+        justify-content: center;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .sticky-elements {
+        bottom: 16px;
+        right: 16px;
+    }
+    
+    .whatsapp-btn,
+    .scroll-top-btn {
+        width: 48px;
+        height: 48px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 16px;
+    }
+    
+    .nav-container {
+        padding: 0 16px;
+    }
+    
+    .name {
+        font-size: 28px;
+    }
+    
+    .designation {
+        font-size: 18px;
+    }
+    
+    .profile-img {
+        width: 240px;
+        height: 240px;
+    }
+    
+    .section-title {
+        font-size: 24px;
+    }
+    
+    .strengths {
+        grid-template-columns: 1fr;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .cta-btn {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+}
+
+/* Additional animations for mobile */
+@media (max-width: 768px) {
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 48px;
+        text-align: center;
+    }
+    
+    .cta-buttons {
+        justify-content: center;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+/* Contact Section - Desktop Layout */
+.contact-content {
+  display: flex;
+  gap: 64px;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.contact-info,
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Two-column layout for form rows */
+.contact-form .form-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.contact-form .form-group {
+  flex: 1;
+}
+
+/* Make message textarea full width */
+.contact-form .form-group textarea {
+  width: 100%;
+  resize: vertical;
+}
+
+/* Button margin */
+.contact-form .submit-btn {
+  margin-top: 16px;
+}
+
+
+/* Footer */
+
+.footer-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.footer-section h3 {
+    color: #feca57;
+    font-size: 18px;
+    margin-bottom: 16px;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-shadow: 0 0 10px rgba(254, 202, 87, 0.5);
+}
+
+/* Sticky Elements */
+.whatsapp-btn {
+    background: #25d366;
+    color: #ffffff;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+}
+
+.whatsapp-btn:hover {
+    background: #128c7e;
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+}
+
+.scroll-top-btn {
+    background: linear-gradient(45deg, #a55eea, #45b7d1);
+    color: #ffffff;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(165, 94, 234, 0.3);
+}
+
+.scroll-top-btn.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.scroll-top-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(165, 94, 234, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .experience-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .experience-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .experience-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+    
+    .experience-icon {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .experience-icon i {
+        font-size: 20px;
+    }
+    
+    .nav-menu {
+        background-color: rgba(10, 10, 10, 0.95);
+        backdrop-filter: blur(10px);
+    }
+    
+    .profile-img {
+        width: 280px;
+        height: 280px;
+    }
+    
+    .name {
+        font-size: 36px;
+    }
+    
+    .designation {
+        font-size: 20px;
+    }
+    
+    .section-title {
+        font-size: 28px;
+    }
+    
+    .strengths {
+        grid-template-columns: 1fr;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .qualifications-content {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+    
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 16px;
+    }
+    
+    .nav-container {
+        padding: 0 16px;
+    }
+    
+    .name {
+        font-size: 28px;
+    }
+    
+    .designation {
+        font-size: 18px;
+    }
+    
+    .profile-img {
+        width: 240px;
+        height: 240px;
+    }
+    
+    .section-title {
+        font-size: 24px;
+    }
+    
+    .cta-btn {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+    
+    .experience-card {
+        padding: 20px;
+    }
+    
+    .experience-icon {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .experience-icon i {
+        font-size: 18px;
+    }
+    
+    .experience-period {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+    
+    .sticky-elements {
+        bottom: 16px;
+        right: 16px;
+    }
+    
+    .whatsapp-btn,
+    .scroll-top-btn {
+        width: 48px;
+        height: 48px;
+        font-size: 20px;
+    }
+}
